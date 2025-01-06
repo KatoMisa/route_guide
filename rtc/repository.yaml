@@ -1,10 +1,10 @@
 dest_select:
   description: 
   git: https://github.com/KatoMisa/dest_select.git
-  hash: 649b8ab6c2015b66b97306219e01ae5a99b42032
+  hash: 3d976d7e345bcc4732bdf880f0034fd190ce7008
   repo_name: dest_select
 announce:
   description: 
   git: https://github.com/KatoMisa/announce.git
-  hash: 2cf2d6d5a6eebebf5ae9a32dd47e89d6a7a1fe4b
+  hash: d7dba97db29208b270ec2f6cd26ed4d20bf6af12
   repo_name: announce
