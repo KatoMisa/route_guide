@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+<rts:RtsProfile xmlns:rts="http://www.openrtp.org/namespaces/rts" xmlns:rtsExt="http://www.openrtp.org/namespaces/rts_ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" rts:id="RTSystem:4:6:5" rts:abstract="7" rts:creationDate="2024-12-26T14:56:54" rts:updateDate="2024-12-26T14:56:54" rts:version="0.2">
+    <rts:Components xsi:type="rtsExt:component_ext" rts:id="RTC:rsdlab:User Interface:dest_select:1.0.0" rts:pathUri="localhost:2809/dest_select0.rtc" rts:activeConfigurationSet="default" rts:instanceName="dest_select0" rts:compositeType="None" rts:isRequired="true" rtsExt:visible="true">
+        <rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="gui_in" rtsExt:visible="true"/>
+        <rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="gui_out" rtsExt:visible="true"/>
+        <rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="place" rtsExt:visible="true"/>
+        <rts:ConfigurationSets rts:id="default">
+            <rts:ConfigurationData rts:name="place1" rts:data="Home"/>
+            <rts:ConfigurationData rts:name="place2" rts:data="Reception desk"/>
+            <rts:ConfigurationData rts:name="place3" rts:data="Room1"/>
+            <rts:ConfigurationData rts:name="place4" rts:data="Room2"/>
+        </rts:ConfigurationSets>
+        <rts:ConfigurationSets rts:id="__widget__">
+            <rts:ConfigurationData rts:name="place1" rts:data="text"/>
+            <rts:ConfigurationData rts:name="place2" rts:data="text"/>
+            <rts:ConfigurationData rts:name="place3" rts:data="text"/>
+            <rts:ConfigurationData rts:name="place4" rts:data="text"/>
+        </rts:ConfigurationSets>
+        <rts:ConfigurationSets rts:id="__type__">
+            <rts:ConfigurationData rts:name="place1" rts:data="string"/>
+            <rts:ConfigurationData rts:name="place2" rts:data="string"/>
+            <rts:ConfigurationData rts:name="place3" rts:data="string"/>
+            <rts:ConfigurationData rts:name="place4" rts:data="string"/>
+        </rts:ConfigurationSets>
+        <rts:ConfigurationSets rts:id="mode0">
+            <rts:ConfigurationData rts:name="place1" rts:data="Home"/>
+            <rts:ConfigurationData rts:name="place2" rts:data="dining room"/>
+            <rts:ConfigurationData rts:name="place3" rts:data="living room"/>
+            <rts:ConfigurationData rts:name="place4" rts:data="bath room"/>
+        </rts:ConfigurationSets>
+        <rts:ConfigurationSets rts:id="mode1">
+            <rts:ConfigurationData rts:name="place1" rts:data="Home"/>
+            <rts:ConfigurationData rts:name="place2" rts:data="mac"/>
+            <rts:ConfigurationData rts:name="place3" rts:data="misdo"/>
+            <rts:ConfigurationData rts:name="place4" rts:data="mos"/>
+        </rts:ConfigurationSets>
+        <rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="0" rts:kind="PERIODIC" rts:rate="1000.0"/>
+        <rtsExt:Location rtsExt:x="0" rtsExt:y="0" rtsExt:height="0" rtsExt:width="0" rtsExt:direction="down"/>
+        <rtsExt:Properties rtsExt:name="IOR" rtsExt:value="IOR:010000003500000049444c3a6f70656e72746d2e616973742e676f2e6a702f4f70656e52544d2f44617461466c6f77436f6d706f6e656e743a312e3000000000010000000000000068000000010102000f0000003139322e3136382e35302e3230360000fb0a00000e000000fe15f06c67000062b9000000000100000200000000000000080000000100000000545441010000001c00000001000000010001000100000001000105090101000100000009010100"/>
+    </rts:Components>
+    <rts:Components xsi:type="rtsExt:component_ext" rts:id="RTC:VenderName:Category:announce:1.0.0" rts:pathUri="localhost:2809/announce0.rtc" rts:activeConfigurationSet="default" rts:instanceName="announce0" rts:compositeType="None" rts:isRequired="true" rtsExt:visible="true">
+        <rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="command_in" rtsExt:visible="true"/>
+        <rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="place" rtsExt:visible="true"/>
+        <rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="command_out" rtsExt:visible="true"/>
+        <rts:ConfigurationSets rts:id="default"/>
+        <rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="0" rts:kind="PERIODIC" rts:rate="1000.0"/>
+        <rtsExt:Location rtsExt:x="0" rtsExt:y="0" rtsExt:height="0" rtsExt:width="0" rtsExt:direction="down"/>
+        <rtsExt:Properties rtsExt:name="IOR" rtsExt:value="IOR:010000003500000049444c3a6f70656e72746d2e616973742e676f2e6a702f4f70656e52544d2f44617461466c6f77436f6d706f6e656e743a312e3000000000010000000000000068000000010102000f0000003139322e3136382e35302e3230360000fb0a00000e000000fe15f06c67000062b9000000000700000200000000000000080000000100000000545441010000001c00000001000000010001000100000001000105090101000100000009010100"/>
+    </rts:Components>
+    <rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="2eb67386-c34e-11ef-863e-7f9b5172c2df" rts:name="placeplace" rts:dataType="IDL:RTC/TimedWString:1.0" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="new">
+        <rts:sourceDataPort rts:componentId="RTC:rsdlab:User Interface:dest_select:1.0.0" rts:instanceName="dest_select0" xsi:type="rtsExt:target_port_ext" rts:portName="dest_select0.place">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost:2809/dest_select0.rtc"/>
+        </rts:sourceDataPort>
+        <rts:targetDataPort rts:componentId="RTC:VenderName:Category:announce:1.0.0" rts:instanceName="announce0" xsi:type="rtsExt:target_port_ext" rts:portName="announce0.place">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost:2809/manager_py.mgr/announce0.rtc"/>
+        </rts:targetDataPort>
+        <rtsExt:Properties rtsExt:name="dataport.dataflow_type" rtsExt:value="push"/>
+        <rtsExt:Properties rtsExt:name="dataport.interface_type" rtsExt:value="corba_cdr"/>
+        <rtsExt:Properties rtsExt:name="dataport.subscription_type" rtsExt:value="new"/>
+        <rtsExt:Properties rtsExt:name="dataport.data_type" rtsExt:value="IDL:RTC/TimedWString:1.0"/>
+        <rtsExt:Properties rtsExt:name="dataport.serializer.cdr.endian" rtsExt:value="little,big"/>
+        <rtsExt:Properties rtsExt:name="dataport.outport.data_type" rtsExt:value="IDL:RTC/TimedWString:1.0"/>
+        <rtsExt:Properties rtsExt:name="dataport.inport.data_type" rtsExt:value="IDL:RTC/TimedWString:1.0"/>
+    </rts:DataPortConnectors>
+</rts:RtsProfile>
